@@ -1,4 +1,4 @@
-function Network(name) {
+function NetworkFunc(name) {
   this.users = [];
   this.name = name;
   this.lastId = 0;
@@ -21,7 +21,7 @@ function Network(name) {
   };
 }
 
-function User({ username, password, name, lastname }) {
+function UserFunc({ username, password, name, lastname }) {
   const psw = password;
   this.name = name;
   this.username = username;
