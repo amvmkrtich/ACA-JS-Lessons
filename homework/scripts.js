@@ -1,20 +1,20 @@
-const inst = new NetworkFunc("Instagram");
+const inst = new Network("Instagram");
 
-const user1 = new UserFunc({
+const user1 = new User({
   name: "MKrtich",
   lastname: "Aleksanyan",
   username: "amv.mkrtich",
   password: "123qwerty",
 });
 
-const user2 = new UserFunc({
+const user2 = new User({
   name: "Vahag",
   lastname: "Hakobyan",
   username: "v_vahag",
   password: "pass_pass",
 });
 
-const user3 = new UserFunc({
+const user3 = new User({
   name: "Ani",
   lastname: "Sahakyan",
   username: "an.sah",

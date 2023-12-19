@@ -11,14 +11,20 @@ class Network {
   }
 
   removeUser(username) {
-    this.#users = this.#users.filter((us) => us.username !== username);
+    // this.#users = this.#users.filter((us) => us.username !== username);
+    const userIndex = this.#users.findIndex((us) => us.username === username);
+    this.#users.splice(userIndex, 1);
   }
 
   login(username, pass) {
-    return Boolean(
+    /* return Boolean(
       this.#users.filter(
         (us) => us.username === username && us.checkPassword(pass)
       ).length
+    ); */
+
+    return this.#users.some(
+      (us) => us.username === username && us.checkPassword(pass)
     );
   }
 }
