@@ -6,7 +6,7 @@ class Network {
   }
 
   addUser(user) {
-    user.id = ++this.#lastId;
+    user.id = this.#lastId++;
     this.#users.push(user);
   }
 

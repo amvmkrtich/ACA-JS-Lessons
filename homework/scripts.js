@@ -24,7 +24,18 @@ const user3 = new User({
 inst.addUser(user2);
 inst.addUser(user1);
 inst.addUser(user3);
-console.log(user2.checkPassword("ani1234"));
+console.log(inst);
 inst.removeUser("v_vahag");
 console.log(inst.login("amv.mkrtich", "123qwerty"));
 console.log(inst);
+
+function A() {
+  this.a = 1;
+}
+
+function B() {
+  this.b = 2;
+}
+B.prototype = new A();
+const b = new B();
+console.log(b.a);
